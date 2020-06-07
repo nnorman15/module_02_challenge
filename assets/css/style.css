@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --primary-color: #9fc6cd; /*light blue*/
+    --secondary-color: #31343e; /*dark purple*/
+    --tertiary-color: #eeeef8; /*light purple*/
+}
+
+body {
+    background-color: var(--tertiary-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* header start */
+header {
+    padding: 20px 35px 20px 0px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+    /* mock-up gif doens't have a sticky header therefore not including it at this time */
+}
+
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0px;
+    padding: 0 10px 0 75px;
+    background-color: var(--primary-color);
+}
+
+header h1 a {
+    color: var(--secondary-color);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-decoration: underline;
+}
+
+/* mock-up gif doens't have mouseover effect therefore not including it on nav at this time */
+
+/* header end */
+
