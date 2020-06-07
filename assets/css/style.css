@@ -5,11 +5,13 @@
     --primary-color: #9fc6cd; /*light blue*/
     --secondary-color: #31343e; /*dark purple*/
     --tertiary-color: #eeeef8; /*light purple*/
+    --quaternary-color: #465671;
 }
 
 body {
     background-color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
+    color: var(--quaternary-color);
 }
 
 /* header start */
@@ -63,7 +65,7 @@ header nav ul li a {
     text-decoration: underline;
 }
 
-/* mock-up gif doens't have mouseover effect therefore not including it on nav at this time */
+/* mock-up gif doens't have mouseover effect on nav or links therefore not including it at this time */
 
 /* header end */
 
@@ -88,3 +90,60 @@ header nav ul li a {
 }
 
 /* hero end */
+
+/* body / footer content begin */
+
+.body-content {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px auto;
+    /* padding-bottom: 50px; */
+}
+
+.body-content > div {
+    padding: 0 20px;
+}
+
+.left-content {
+    text-align: right;
+    border-right: 3px solid var(--quaternary-color);
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-size: 35px;
+    color: var(--quaternary-color);
+    min-width: 200px;
+}
+
+.intro p {
+    margin-bottom: 15px;
+}
+
+.right-content {
+    flex: 12;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto 20px;
+}
+
+footer ul li {
+    display: inline-block;
+    border-bottom: 3px solid var(--quaternary-color);
+}
+
+footer ul li a {
+    color: var(--quaternary-color);
+    text-decoration: none;
+}
+/* body / footer content end */
