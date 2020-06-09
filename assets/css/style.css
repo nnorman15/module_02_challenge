@@ -6,6 +6,9 @@
     --secondary-color: #31343e; /*dark purple*/
     --tertiary-color: #eeeef8; /*light purple*/
     --quaternary-color: #465671;
+    --job-img-overlay-color1: rgba(247, 245, 252, 0.452);
+    --job-img-overlay-color2: rgba(117, 19, 93, 0.73);
+
 }
 
 body {
@@ -142,6 +145,8 @@ h2 {
 .grid-item {
     border: 5px solid var(--primary-color);
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .grid-work-title {
     position: absolute;
@@ -149,24 +154,59 @@ h2 {
     margin: 10px 0;
     padding: 10px 15px;
     background-color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1vw;
 }
 .grid-work-title span {
-    font-size: 1vw;
+    font-size: .75vw;
+    font-weight: normal;
 }
 .grid-work-1{
     grid-column: span 2 / auto;
     grid-row: span 2 / auto;
+    /* background-image: url("../images/universe.jpg"); */
+    background-image: linear-gradient(to bottom, var(--job-img-overlay-color1), var(--job-img-overlay-color2)),
+    url("../images/universe.jpg");
+    
+}
+.grid-work-1:hover{
+    background-image: url("../images/universe.jpg");
+    
 }
 .grid-work-2 { 
+    /* background-image: url("../images/digital_city.jpg"); */
+    background-image: linear-gradient(to bottom, var(--job-img-overlay-color1), var(--job-img-overlay-color2)),
+    url("../images/digital_city.jpg");
+}
+.grid-work-2:hover{
+    background-image: url("../images/digital_city.jpg");
     
 }
 .grid-work-3 { 
-     
+    /* background-image: url("../images/digital_poltergeist.jpg"); */
+    background-image: linear-gradient(to bottom, var(--job-img-overlay-color1), var(--job-img-overlay-color2)),
+    url("../images/digital_poltergeist.jpg");
+}
+.grid-work-3:hover{
+    background-image: url("../images/digital_poltergeist.jpg");
+    
 }
 .grid-work-4 { 
-     
+    /* background-image: url("../images/ideas.jpg"); */
+    background-image: linear-gradient(to bottom, var(--job-img-overlay-color1), var(--job-img-overlay-color2)),
+    url("../images/ideas.jpg");
+}
+.grid-work-4:hover{
+    background-image: url("../images/ideas.jpg");
+    
 }
 .grid-work-5 { 
+    /* background-image: url("../images/choose_two.jpg"); */
+    background-image: linear-gradient(to bottom, var(--job-img-overlay-color1), var(--job-img-overlay-color2)),
+    url("../images/choose_two.jpg");
+}
+.grid-work-5:hover{
+    background-image: url("../images/choose_two.jpg");
     
 }
 
