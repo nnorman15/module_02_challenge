@@ -289,6 +289,24 @@ footer ul li a {
         /* width: 40px; */
     }
 
+    .grid-work-parent {
+        height: 800px;
+        grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    }
+
+    .grid-item,.grid-work-1 {
+        grid-column: span 1 / auto;
+        grid-row: span 1 / auto;
+    }
+
+    .grid-work-title {
+        font-size: 20px;
+    }
+
+    .grid-work-title span {
+        font-size: 15px;
+    }
+
     footer ul {
         font-size: 15px;
         display: block;
