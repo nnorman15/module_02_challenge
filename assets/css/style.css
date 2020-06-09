@@ -130,6 +130,13 @@ h2 {
     margin-bottom: 15px;
 }
 
+.self-portrait {
+    max-width: 200px;
+    float: right;
+    border: 5px solid var(--primary-color);
+    margin: 10px;
+}
+
 .right-content {
     flex: 12;
 }
