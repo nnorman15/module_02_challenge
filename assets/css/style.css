@@ -22,7 +22,11 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     top: 0;
-    /* mock-up gif doens't have a sticky header therefore not including it at this time */
+    /* 
+    mock-up gif doens't have a sticky header therefore not including it at this time but if i were to include it it would go like this :
+    position: -webkit-sticky;
+    position: sticky;
+     */
 }
 
 header a {
@@ -32,7 +36,7 @@ header a {
 
 header h1 {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2vw;
     margin: 0px;
     padding: 0 10px 0 75px;
     background-color: var(--primary-color);
@@ -81,7 +85,7 @@ header nav ul li a {
 .hero div {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    font-size: 30px;
+    font-size: 1.75vw;
     font-weight: bold;
     position: absolute;
     bottom: 20px;
@@ -99,7 +103,6 @@ header nav ul li a {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 50px auto;
-    /* padding-bottom: 50px; */
 }
 
 .body-content > div {
@@ -115,9 +118,9 @@ header nav ul li a {
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 2.5vw;
     color: var(--quaternary-color);
-    min-width: 200px;
+    min-width: 175px;
 }
 
 .intro p {
@@ -128,11 +131,52 @@ h2 {
     flex: 12;
 }
 
+/* work grid start */
+
+.grid-work-parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    height: 400px;
+}
+.grid-item {
+    border: 5px solid var(--primary-color);
+    position: relative;
+}
+.grid-work-title {
+    position: absolute;
+    bottom: 10px;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+}
+.grid-work-title span {
+    font-size: 1vw;
+}
+.grid-work-1{
+    grid-column: span 2 / auto;
+    grid-row: span 2 / auto;
+}
+.grid-work-2 { 
+    
+}
+.grid-work-3 { 
+     
+}
+.grid-work-4 { 
+     
+}
+.grid-work-5 { 
+    
+}
+
+/* work grid end */
+
 footer ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 1.25vw;
     font-weight: bold;
     margin: auto 20px;
 }
@@ -147,3 +191,152 @@ footer ul li a {
     text-decoration: none;
 }
 /* body / footer content end */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    
+    header h1{
+        font-size: 3vw;
+    }
+
+    header nav ul li a {
+        font-size: 2vw;
+    }
+
+    h2{
+        min-width: 100px;
+    }
+
+    footer ul {
+        font-size: 1.75vw;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px 10px 20px 0px;
+    }
+
+    header h1 {
+        padding: 10px 10px 10px 35px;
+        font-size: 18px;
+        text-justify: 
+    }
+
+    header nav {
+        padding-top: 5px;
+    }
+
+    header nav ul li a {
+        font-size: 15px;
+    }
+
+    header nav ul li a {
+        font-size: 15px;
+    }
+
+    .hero {
+        height: 276px
+    }
+
+    .hero div {
+        right: 50px;
+        font-size: 15px;
+    }
+
+    h2{
+        /* width: 40px; */
+    }
+
+    footer ul {
+        font-size: 15px;
+        display: block;
+    }
+
+    footer ul li {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: none;
+    }
+
+    footer ul li a {
+        border-bottom: 3px solid var(--quaternary-color);
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    header {
+        padding: 10px;
+        display: block;
+    }
+
+    header h1{
+        text-align: center;
+        background-color: var(--secondary-color);
+        font-size: 10vw;
+        padding: 0;
+    }
+
+    header h1 a{
+        color: var(--primary-color);
+    }
+
+    nav {
+        /* background-color: var(--primary-color); */
+        padding: 10px;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    nav ul li {
+        background: var(--quaternary-color);
+        border-radius: 15px;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    nav ul li:hover {
+        background: var(--primary-color);
+    }
+
+    header nav ul li a  {
+        color: var(--primary-color);
+        text-decoration: none;
+    }
+
+    header nav ul li a:hover  {
+        color: var(--secondary-color);
+        text-decoration: none;
+    }
+
+    .body-content {
+        display: block;
+        width: 90%
+    }
+
+    .left-content {
+        text-align: left;
+        border-right: none;
+        display: block;
+        margin: 10px 0;
+    }
+
+    h2{
+        font-size: 4vw;
+        border-bottom: 3px solid var(--quaternary-color);
+    }
+
+    .lg-vp{
+        display: none;
+    }
+
+    .sm-vp{
+        display: inline;
+    }
+
+
+}

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- indending head and body because i got dinged the last time i didn't even though 1) vscode temple doesn't indent these, 2) the code examples provided by uofa don't intent these eitehr, and 3) there are only one of each of these elements per html file therefore seems unnecessary but whatever it's indented now.  move along. -->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +23,7 @@
                         <a href="#contact-me">Contact Me</a>
                     </li>
                     <li>
-                        <a href="#resume">Resume</a>
+                        <a href="resume.html" target="_blank">Resume</a><!--I AM NOT POSTING A LINK TO MY RESUME FOR SECURITY REASONS AND EXPECT NOT TO BE PENALIZED FOR IT-->
                     </li>
                 </ul>
             </nav>
@@ -36,7 +35,7 @@
         </section>
         <section id="about-me" class="body-content">
             <div class="left-content">
-                <h2>About<br />Me</h2>
+                <h2>About<span class="lg-vp"><br /></span><span class="sm-vp">&nbsp;</span>Me</h2>
             </div>
             <div class="right-content">
                 <div class="intro">
@@ -55,21 +54,50 @@
                 <h2>Work</h2>
             </div>
             <div class="right-content">
-                <div>
-                    work grid goes here
+                <div class="grid-work-parent">
+                    <div class="grid-item grid-work-1">
+                        <div class="grid-work-title">
+                            Title of Work 1
+                            <span><br />Subtitle</span>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-work-2">
+                        <div class="grid-work-title">
+                            Title of Work 2
+                            <span><br />Subtitle</span>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-work-3">
+                        <div class="grid-work-title">
+                            Title of Work 3
+                            <span><br />Subtitle</span>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-work-4">
+                        <div class="grid-work-title">
+                            Title of Work 4
+                            <span><br />Subtitle</span>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-work-5">
+                        <div class="grid-work-title">
+                            Title of Work 5
+                            <span><br />Subtitle</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <footer id="work" class="body-content">
+        <footer id="contact-me" class="body-content">
             <div class="left-content">
-                <h2>Contact<br />Me</h2>
+                <h2>Contact<span class="lg-vp"><br /></span><span class="sm-vp">&nbsp;</span>Me</h2>
             </div>
             <div class="right-content">
                 <div>
                     <ul>
                         <!-- I AM NOT POSTING MY ACTUAL CONTACT INFO FOR SECURITY REASONS AND EXPECT NOT TO BE PENALIZED FOR IT. -->
                         <li><a href="tel:5205551212">520.555.1212</a></li>
-                        <li><a href="mailto:my_contact_email@gmail.com">my_contact_email@gmail.com</a></li>
+                        <li><a href="mailto://my_contact_email@gmail.com" target="_blank">my_contact_email@gmail.com</a></li>
                         <li><a href="https://if_i_had_twitter_url.com" target="_blank">twitter</a></li>
                         <li><a href="https://if_i_had_spotify_url.com" target="_blank">spotify</a></li>
                     </ul>
