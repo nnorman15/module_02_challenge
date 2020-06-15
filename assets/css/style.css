@@ -6,8 +6,6 @@
     --secondary-color: #31343e; /*dark purple*/
     --tertiary-color: #eeeef8; /*light purple*/
     --quaternary-color: #465671;
-    --job-img-overlay-color1: rgba(247, 245, 252, 0.452);
-    --job-img-overlay-color2: rgba(117, 19, 93, 0.73);
 
 }
 
@@ -171,46 +169,45 @@ h2 {
 .grid-work-1{
     grid-column: span 2 / auto;
     grid-row: span 2 / auto;
-    /* background-image: url("../images/universe.jpg"); */
-    background-image: linear-gradient(to bottom, var(--job-img-overlay-color1), var(--job-img-overlay-color2)),
-    url("../images/universe.jpg");
-    
+    /* NOT ALL BROWSERS ACCEPT USING VARIABLES THEREFORE ADDED RGBAS DIRECTLY FOR THESE */
+    background: linear-gradient(rgba(247, 245, 252, 0.452) 0%, rgba(117, 19, 93, 0.73) 80%, rgba(49, 52, 62, 1) 100%), url('../images/universe.jpg') no-repeat;
+    background-size: cover;
 }
 .grid-work-1:hover{
     background-image: url("../images/universe.jpg");
     
 }
 .grid-work-2 { 
-    /* background-image: url("../images/digital_city.jpg"); */
-    background-image: linear-gradient(to bottom, var(--job-img-overlay-color1), var(--job-img-overlay-color2)),
-    url("../images/digital_city.jpg");
+    /* NOT ALL BROWSERS ACCEPT USING VARIABLES THEREFORE ADDED RGBAS DIRECTLY FOR THESE */
+    background: linear-gradient(rgba(247, 245, 252, 0.452) 0%, rgba(117, 19, 93, 0.73) 80%, rgba(49, 52, 62, 1) 100%), url('../images/digital_city.jpg') no-repeat;
+    background-size: cover;
 }
 .grid-work-2:hover{
     background-image: url("../images/digital_city.jpg");
     
 }
 .grid-work-3 { 
-    /* background-image: url("../images/digital_poltergeist.jpg"); */
-    background-image: linear-gradient(to bottom, var(--job-img-overlay-color1), var(--job-img-overlay-color2)),
-    url("../images/digital_poltergeist.jpg");
+    /* NOT ALL BROWSERS ACCEPT USING VARIABLES THEREFORE ADDED RGBAS DIRECTLY FOR THESE */
+    background: linear-gradient(rgba(247, 245, 252, 0.452) 0%, rgba(117, 19, 93, 0.73) 80%, rgba(49, 52, 62, 1) 100%), url('../images/digital_poltergeist.jpg') no-repeat;
+    background-size: cover;
 }
 .grid-work-3:hover{
     background-image: url("../images/digital_poltergeist.jpg");
     
 }
 .grid-work-4 { 
-    /* background-image: url("../images/ideas.jpg"); */
-    background-image: linear-gradient(to bottom, var(--job-img-overlay-color1), var(--job-img-overlay-color2)),
-    url("../images/ideas.jpg");
+    /* NOT ALL BROWSERS ACCEPT USING VARIABLES THEREFORE ADDED RGBAS DIRECTLY FOR THESE */
+    background: linear-gradient(rgba(247, 245, 252, 0.452) 0%, rgba(117, 19, 93, 0.73) 80%, rgba(49, 52, 62, 1) 100%), url('../images/ideas.jpg') no-repeat;
+    background-size: cover;
 }
 .grid-work-4:hover{
     background-image: url("../images/ideas.jpg");
     
 }
 .grid-work-5 { 
-    /* background-image: url("../images/choose_two.jpg"); */
-    background-image: linear-gradient(to bottom, var(--job-img-overlay-color1), var(--job-img-overlay-color2)),
-    url("../images/choose_two.jpg");
+    /* NOT ALL BROWSERS ACCEPT USING VARIABLES THEREFORE ADDED RGBAS DIRECTLY FOR THESE */
+    background: linear-gradient(rgba(247, 245, 252, 0.452) 0%, rgba(117, 19, 93, 0.73) 80%, rgba(49, 52, 62, 1) 100%), url('../images/choose_two.jpg') no-repeat;
+    background-size: cover;
 }
 .grid-work-5:hover{
     background-image: url("../images/choose_two.jpg");
