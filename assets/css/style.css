@@ -190,11 +190,11 @@ h2 {
 }
 .grid-work-3 { 
     /* NOT ALL BROWSERS ACCEPT USING VARIABLES THEREFORE ADDED RGBAS DIRECTLY FOR THESE */
-    background: linear-gradient(rgba(247, 245, 252, 0.452) 0%, rgba(117, 19, 93, 0.73) 80%, rgba(49, 52, 62, 1) 100%), url('../images/digital_poltergeist.jpg') no-repeat;
+    background: linear-gradient(rgba(247, 245, 252, 0.452) 0%, rgba(117, 19, 93, 0.73) 80%, rgba(49, 52, 62, 1) 100%), url('../images/weed_it_and_reap_site.png') no-repeat;
     background-size: cover;
 }
 .grid-work-3:hover{
-    background-image: url("../images/digital_poltergeist.jpg");
+    background-image: url("../images/weed_it_and_reap_site.png");
     
 }
 .grid-work-4 { 
